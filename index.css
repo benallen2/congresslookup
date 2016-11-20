@@ -1,0 +1,114 @@
+.navbar{
+  text-align: center;
+  background: #142044;
+  background: linear-gradient(to right, #142044 , #1B2854);
+  height: 10vh;
+  color: white;
+  width: 100%;
+}
+.navIcon{
+  height: 100%;
+}
+.overlay{
+  height: 90vh;
+  width: 100%;
+  margin: 0 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+  position: absolute;
+}
+.mainContainer{
+  margin-top: 10vh;
+  padding: 0 0;
+  height: 90vh;
+  width: 100%;
+  background: url("./capitol.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.row{
+  margin: 0 0;
+}
+
+.repDiv{
+  height: 30%;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 1;
+  padding: 0 0;
+  margin-top: 100px;
+  cursor: pointer;
+  z-index: 2;
+}
+.repDiv > h3 {
+  line-height: 100px;
+  font-size: 48px;
+}
+
+.repDiv:hover{
+  opacity: 0.8;
+  background-color: #6A6A6A;
+  border: 5px solid #6A6A6A;
+  color: white;
+  transition: all ease .4s;
+}
+.committeeDiv{
+  height: 30%;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 1;
+  padding: 0 0;
+  margin-top: 100px;
+  cursor: pointer;
+  z-index: 2;
+}
+.committeeDiv > h3 {
+  line-height: 100px;
+  font-size: 48px;
+}
+.committeeDiv:hover{
+  opacity: 0.8;
+  background-color: #6A6A6A;
+  border: 5px solid #6A6A6A;
+  color: white;
+  transition: all ease .4s;
+}
+@media screen and (max-width: 500px){
+  .repDiv > h3 {
+    font-size: 36px;
+  }
+  .committeeDiv > h3 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 400px){
+  .repDiv > h3 {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .committeeDiv{
+    height: 25vh;
+    margin-top: 15vh;
+  }
+  .repDiv{
+    height: 25vh;
+    margin-top: 5vh;
+  }
+  .committeeDiv > h3 {
+    font-size: 24px;
+    line-height: 10vh;
+  }
+  .navTitle > h1{
+    font-size: 22px;
+  }
+}
+a {
+  color: inherit;
+}

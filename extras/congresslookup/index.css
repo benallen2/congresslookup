@@ -1,0 +1,122 @@
+.navbar{
+  text-align: center;
+  background: #142044;
+  background: linear-gradient(to right, #142044 , #1B2854);
+  height: 10vh;
+  color: white;
+}
+.row{
+  margin: 0 0;
+}
+
+.fa-bars{
+  margin-top: 20px;
+}
+.fa-arrow-left{
+  margin-top: 20px;
+}
+.repDiv{
+  height: 30%;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 1;
+  padding: 0 0;
+  margin-top: 100px;
+  cursor: pointer;
+  z-index: 2;
+
+}
+.repDiv > h3 {
+  line-height: 100px;
+  font-size: 48px;
+}
+.repDiv:hover{
+  opacity: 0.8;
+  background-color: #6A6A6A;
+  border: 5px solid #6A6A6A;
+  color: white;
+  transition: all ease .4s;
+}
+.committeeDiv{
+  height: 30%;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 1;
+  padding: 0 0;
+  margin-top: 100px;
+  cursor: pointer;
+  z-index: 2;
+
+}
+.committeeDiv > h3 {
+  line-height: 100px;
+  font-size: 48px;
+}
+.committeeDiv:hover{
+  opacity: 0.8;
+  background-color: #6A6A6A;
+  border: 5px solid #6A6A6A;
+  color: white;
+  transition: all ease .4s;
+}
+
+#repstuff{
+  opacity: 1;
+}
+.chamberDiv {
+  position: relative;
+  height: 25%;
+  border: 5px solid white;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 2;
+  color: black;
+  background-color: white;
+  opacity: 1;
+  padding: 0 0;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.chamberDiv:hover{
+  opacity: 0.8;
+  background-color: #6A6A6A;
+  border: 5px solid #6A6A6A;
+  color: white;
+  transition: all ease .4s;
+}
+
+.chamberDiv > h2{
+  font-size: 68px;
+  line-height: 200px;
+}
+
+.mainContainer{
+  margin-top: 10vh;
+  padding: 0 0;
+  height: 90vh;
+  background: url("./capitol.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+#houseDiv{
+  margin-right: 15px;
+}
+#senateDiv{
+  margin-left: 15px;
+}
+
+.overlay{
+  height: 90vh;
+  width: 100%;
+  margin: 0 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+  position: absolute;
+}
