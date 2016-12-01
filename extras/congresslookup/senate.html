@@ -12,8 +12,64 @@
 	<script src="senate.js" rel="stylesheet" type="text/javascript"></script>
 </head>
 <body>
-  <iframe src="http://createaclickablemap.com/map.php?&id=54668&online=true" width="900" height="525" style="border: none;"></iframe>
-  <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+
+
+	<p class="dParty rep" data-toggle="modal" data-target="#myModal" id="D000620">John Delaney</p>
+	<p class="rParty rep" data-toggle="modal" data-target="#myModal" id="S001168">John Sarbanes</p>
+	<p class="iParty rep" data-toggle="modal" data-target="#myModal" id="H001052">Andy Harris</p>
+	<p class="rep" data-toggle="modal" data-target="#myModal" id="C000141">Cardin</p>
+
+	<!-- Modal -->
+	  <div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">
+
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title"></h4>
+	        </div>
+	        <div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-4 headshot">
+									<img id="repPhoto" src="" />
+								</div>
+								<div class="col-xs-8 geninfo">
+									<h5 class="infoHeader">General Information</h5>
+									<p class="information" id="state"></p>
+									<p class="information" id="district"></p>
+									<p class="information" id="party"></p>
+									<p class="information" id="birthday"></p>
+									<p class="information" id="term"></p>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-4 socialMedia">
+									<h5 class="infoHeader">Social Media</h5>
+										<a target="_blank" href="" id="repfacebook"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+										<a target="_blank" href="" id="reptwitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+										<a target="_blank" href="" id="repyoutube"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+								</div>
+								<div class="col-xs-8 contactInfo">
+									<h5 class="infoHeader">Contact Information</h5>
+									<p class="information" id="office"></p>
+									<p class="information" id="phone"></p>
+									<p class="information" id="fax"></p>
+									<a class="information" id="website" target="_blank"></a>
+								</div>
+							</div>
+					</div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
 
 </body>
 </html>

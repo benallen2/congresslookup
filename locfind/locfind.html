@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"><!-- font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><!-- Bootstrap Css-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!--Bootstrap js-->
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<title>Congress Lookup</title>
+	<link href="locfind.css" rel="stylesheet" type="text/css">
+	<script src="locfind.js" rel="stylesheet" type="text/javascript"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row navbar navbar-fixed-top">
+      <div class="col-xs-1 col-md-2 navIcon">
+        <a href="../index.html"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i><h6 class="navBack">Back</h6></a>
+      </div>
+      <div class="col-xs-10 col-md-8 navTitle">
+        <h1>Congress Lookup</h1>
+				<h6>- Find Your Representatives in Congress -</h6>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mainContainer">
+    <div class="overlay">
+    </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 mapDiv">
+            <h3>Your Location:</h3>
+            <div class="map" id="map">
+
+            </div>
+          </div>
+            <div class="container-fluid repsDiv">
+              <div class="row">
+                <div class="col-xs-12 col-md-7 col-md-offset-1 seniorSenate infoDiv">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <img class="headshot" id="SSrepPhoto" src="" />
+                      </div>
+                      <div class="col-xs-8 geninfo">
+                        <h3 class="repName" id="SSname"></h3>
+                        <h5 class="infoHeader">General Information</h5>
+                        <p class="information" id="SSstate"></p>
+                        <p class="information" id="SSdistrict"></p>
+                        <p class="information" id="SSparty"></p>
+                        <p class="information" id="SSbirthday"></p>
+                        <p class="information" id="SSterm"></p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-xs-4 socialMedia">
+                        <h5 class="infoHeader">Social Media</h5>
+                          <a target="_blank" href="" id="SSrepfacebook"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+                          <a target="_blank" href="" id="SSreptwitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                          <a target="_blank" href="" id="SSrepyoutube"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="col-xs-8 contactInfo">
+                        <h5 class="infoHeader">Contact Information</h5>
+                        <p class="information" id="SSoffice"></p>
+                        <p class="information" id="SSphone"></p>
+                        <p class="information" id="SSfax"></p>
+                        <a class="information" id="SSwebsite" target="_blank"></a>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-xs-12 col-md-7 col-md-offset-1 juniorSenate infoDiv">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <img class="headshot" id="JSrepPhoto" src="" />
+                      </div>
+                      <div class="col-xs-8 geninfo">
+                        <h3 class="repName" id="JSname"></h3>
+                        <h5 class="infoHeader">General Information</h5>
+                        <p class="information" id="JSstate"></p>
+                        <p class="information" id="JSdistrict"></p>
+                        <p class="information" id="JSparty"></p>
+                        <p class="information" id="JSbirthday"></p>
+                        <p class="information" id="JSterm"></p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-xs-4 socialMedia">
+                        <h5 class="infoHeader">Social Media</h5>
+                          <a target="_blank" href="" id="JSrepfacebook"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+                          <a target="_blank" href="" id="JSreptwitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                          <a target="_blank" href="" id="JSrepyoutube"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="col-xs-8 contactInfo">
+                        <h5 class="infoHeader">Contact Information</h5>
+                        <p class="information" id="JSoffice"></p>
+                        <p class="information" id="JSphone"></p>
+                        <p class="information" id="JSfax"></p>
+                        <a class="information" id="JSwebsite" target="_blank"></a>
+                      </div>
+                    </div>
+                </div>
+                </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-md-7 col-md-offset-1 representative infoDiv">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <img class="headshot" id="repPhoto" src="" />
+                      </div>
+                      <div class="col-xs-8 geninfo">
+                        <h3 class="repName" id="Repname"></h3>
+                        <h5 class="infoHeader">General Information</h5>
+                        <p class="information" id="Repstate"></p>
+                        <p class="information" id="Repdistrict"></p>
+                        <p class="information" id="Repparty"></p>
+                        <p class="information" id="Repbirthday"></p>
+                        <p class="information" id="Repterm"></p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-xs-4 socialMedia">
+                        <h5 class="infoHeader">Social Media</h5>
+                          <a target="_blank" href="" id="repfacebook"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+                          <a target="_blank" href="" id="reptwitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                          <a target="_blank" href="" id="repyoutube"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="col-xs-8 contactInfo">
+                        <h5 class="infoHeader">Contact Information</h5>
+                        <p class="information" id="Repoffice"></p>
+                        <p class="information" id="Repphone"></p>
+                        <p class="information" id="Repfax"></p>
+                        <a class="information" id="Repwebsite" target="_blank"></a>
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtGLNx-TkmSYc2jQW0yjioUEWaPh_z-Jw&callback=getLoc">
+</script>
+</body>
+</html>

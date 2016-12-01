@@ -1,17 +1,27 @@
+body{
+  background-color: #142044;
+}
 .navbar{
   text-align: center;
-  background: #142044;
   background: linear-gradient(to right, #142044 , #1B2854);
   height: 12vh;
   color: white;
   width: 100%;
+  display: inline-block;
 }
 .navIcon{
   height: 100%;
+  display: inline-block;
 }
-.navTitle > h6 {
-  font-size: 16px;
+.fa-chevron-circle-left{
+  margin: 10px 8px;
+  cursor: pointer;
 }
+.navBack{
+  display: inline-block;
+  font-size: 18px;
+}
+
 .overlay{
   height: 90vh;
   width: 100%;
@@ -26,7 +36,7 @@
   padding: 0 0;
   height: 90vh;
   width: 100%;
-  background: url("./capitol.jpg");
+  background: url("../capitol.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,49 +46,48 @@
   margin: 0 0;
 }
 
-.searchDiv{
-  height: 25%;
+.mapDiv{
+  /*height: 70vh;*/
   text-align: center;
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
   opacity: 1;
   padding: 0 0;
-  margin-top: 80px;
+  margin-top: 40px;
   cursor: pointer;
   z-index: 2;
 }
-.searchDiv > h3 {
+.repDiv > h3 {
   line-height: 100px;
   font-size: 48px;
 }
-
-.searchDiv:hover{
-  opacity: 0.8;
-  background-color: #6A6A6A;
-  border: 5px solid #6A6A6A;
-  color: white;
-  transition: all ease .3s;
+.navTitle > h6 {
+  font-size: 16px;
 }
 
-@media screen and (max-width: 500px){
-  .searchDiv > h3 {
-    font-size: 36px;
-  }
-}
-@media screen and (max-width: 400px){
-  .searchDiv > h3 {
-    font-size: 24px;
-    line-height: 50px;
-  }
-  .searchDiv{
-    height: 25vh;
-    margin-top: 5vh;
-  }
-  .navTitle > h1{
-    font-size: 22px;
-  }
-}
-a {
+a{
   color: inherit;
+}
+a:hover{
+  color: #6A6A6A;
+}
+
+.dParty{
+  background-color: #90A0FC;
+}
+
+.rParty{
+  background-color: #CC727B;
+}
+
+.iParty{
+  background-color: #D6D589;
+}
+
+#repPhoto{
+  width: 100%;
+}
+.infoHeader{
+  font-weight: bolder;
 }
